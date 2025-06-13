@@ -1,0 +1,10 @@
+
+streamlit>=1.34.0
+matplotlib
+numpy
+soundfile
+noisereduce
+scipy
+
+librosa
+streamlit-webrtc
