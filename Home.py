@@ -6,7 +6,7 @@ from scipy.signal import butter, lfilter
 from io import BytesIO
 
 # ── Page set‑up ───────────────────────────────────────────────────────────────
-st.set_page_config(page_title="Noise Filter App 🎧", page_icon="🎧", layout="centered")
+st.set_page_config(page_title="Speech Preprocessing Module 🎧", page_icon="🎧", layout="centered")
 
 # ── GOLD‑&‑BLUE THEME CSS ─────────────────────────────────────────────────────
 st.markdown("""
