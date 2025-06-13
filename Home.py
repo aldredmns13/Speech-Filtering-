@@ -55,7 +55,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ── Title ─────────────────────────────────────────────────────────────────────
-st.markdown('<div class="title-box">Noise Filter App 🎧</div>', unsafe_allow_html=True)
+st.markdown('<div class="title-box"> Speech Preprocessing Module🎧</div>', unsafe_allow_html=True)
 
 # ── DSP helper functions ──────────────────────────────────────────────────────
 def normalize_audio(a):  m=np.max(np.abs(a)); return a if m==0 else a/m*0.9
