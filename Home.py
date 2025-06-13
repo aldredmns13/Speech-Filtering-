@@ -9,6 +9,12 @@ import noisereduce as nr
 from scipy.signal import butter, lfilter
 from io import BytesIO
 
+# ~/.streamlit/config.toml
+# [theme]
+# base="light"
+# primaryColor="#F63366"
+
+
 # --- Page Configuration ---
 st.set_page_config(page_title="Noise Filter App 🎧", page_icon="🎧", layout="centered")
 
