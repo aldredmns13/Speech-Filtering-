@@ -8,6 +8,36 @@ import matplotlib.pyplot as plt
 import noisereduce as nr
 from scipy.signal import butter, lfilter
 from io import BytesIO
+import streamlit as st
+
+st.set_page_config(page_title="Styled Noise Filter App", page_icon="🎧")
+
+# CSS override
+st.markdown("""
+    <style>
+        html, body, [data-testid="stAppViewContainer"] {
+            background: linear-gradient(to bottom right, black, gray) !important;
+        }
+
+        [data-testid="stHeader"], .block-container {
+            background: transparent !important;
+        }
+
+        .custom-title {
+            background-color: black;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# Title
+st.markdown('<div class="custom-title"><h1>Noise Filter App 🎧</h1></div>', unsafe_allow_html=True)
+
+st.write("If you see a black-to-gray background and a white title inside a black box, styling is working.")
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(page_title="Noise Filter App 🎧", page_icon="🎧")
